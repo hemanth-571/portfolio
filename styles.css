@@ -1,0 +1,88 @@
+
+body{margin:0;font-family:Segoe UI;background:#0f172a;color:white}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #120f0f;
+  padding: 1rem;
+  color: #fff;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+/* Hide Hamburger by default on larger screens */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    left: 0;
+    background: #333;
+  }
+
+  .nav-links.active {
+    display: flex; /* Shown when toggled */
+  }
+
+  .nav-links a {
+    margin: 0;
+    padding: 1rem;
+    border-top: 1px solid #444;
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger on mobile */
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 1fr 1fr splits the space into two equal parts */
+  gap: 20px;
+}
+
+.grid-child {
+  padding: 15px;
+  background: #2b3a4f;
+}
+ 
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+.button-link:hover {
+  background-color: #0056b3;
+}
+.para{font-size: 17px;}
+.hero{padding:120px 20px;text-align:center;}
+section{padding:60px 20px;max-width:1100px;margin:auto;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#2b3a4f;padding:20px;border-radius:12px;  border: 1px solid #ddd; }
+#experience{display: flex; flex-direction: column; flex-wrap: wrap; gap: 20px;}
+#projects{display: flex; flex-direction: column; gap: 20px;}
+h1{font-size:60px;}
+h2{font-size: 30px ;color:#38bdf8}
+p{font-size: 20px;}
+.logo{font-size: larger;font-weight: bolder;}
